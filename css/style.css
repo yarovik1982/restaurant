@@ -199,7 +199,9 @@ li a{
 
 /* -------------intro----------------------- */
 
-
+.intro{
+   position: relative;
+}
 .intro__wrapper {
    margin-top: -8rem;
 }
@@ -372,6 +374,7 @@ color: #000000;
    background-size: cover;
    min-height: 35.7rem;
    margin-top: 12.2rem;
+   padding-bottom: 16px;
 }
 
 .banner__row {
@@ -537,7 +540,37 @@ margin-bottom: 13.8rem;
   top:calc(50% - 2rem);
 }
 .menu-swiper-button-prev {
+   position: relative;
    margin-left: -10rem;
+   cursor: pointer;
+}
+.menu-swiper-button-prev::after{
+   content: "";
+   width: 0;
+   height: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border-width: 1em 0 1em 2em;
+   border-style: solid;
+   border-color: transparent #fff;
+   transform: translate(-50%, -50%) rotate(180deg);
+   -webkit-transform: translate(-50%, -50%) rotate(180deg);
+   -moz-transform: translate(-50%, -50%) rotate(180deg);
+   -ms-transform: translate(-50%, -50%) rotate(180deg);
+   -o-transform: translate(-50%, -50%) rotate(180deg);
+}
+.menu-swiper-button-next::after{
+   content: "";
+   width: 0;
+   height: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border-width: 1em 0 1em 2em;
+   border-style: solid;
+   border-color: transparent #fff;
+   transform: translate(-50%, -50%);
 }
 .menu-swiper-button-prev img{
    width: 4rem;
@@ -548,7 +581,9 @@ margin-bottom: 13.8rem;
    height: 4rem;
 }
 .menu-swiper-button-next {
+   position: relative;
    margin-right: -10rem;
+   cursor: pointer;
 }
 .menu-swiper {
    height: 51rem;   
