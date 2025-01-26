@@ -608,8 +608,9 @@ margin-bottom: 13.8rem;
    margin-bottom: 1.6rem;
 }
 .slide__card-row img{
-   width: 23rem;
-   height: 23rem;
+   width: 23em;
+   height: 23em;
+   object-fit:cover;
    border-radius: 50%;
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
